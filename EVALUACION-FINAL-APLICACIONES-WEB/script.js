@@ -12,24 +12,28 @@ function calcularDescuento(precio, porcentaje) {
     return precio - (precio * porcentaje / 100);
 }
 
-// Mostrar precio con descuento
-const productoDescuento = productos[1];
-const precioFinal = calcularDescuento(productoDescuento.precio, 20);
+// Botón para calcular descuento y total
+document.getElementById("btnCalcular").addEventListener("click", function () {
 
-document.getElementById("descuento").textContent =
-`${productoDescuento.nombre} con 20% de descuento: $${precioFinal.toFixed(2)}`;
+    // Calcular descuento
+    const productoDescuento = productos[1];
+    const precioFinal = calcularDescuento(productoDescuento.precio, 20);
 
-// Calcular total de productos
-let total = 0;
+    document.getElementById("descuento").textContent =
+    `${productoDescuento.nombre} con 20% de descuento: $${precioFinal.toFixed(2)}`;
 
-for (let i = 0; i < productos.length; i++) {
-    total += productos[i].precio;
-}
+    // Calcular total
+    let total = 0;
 
-document.getElementById("total").textContent =
-`Total de todos los productos: $${total}`;
+    for (let i = 0; i < productos.length; i++) {
+        total += productos[i].precio;
+    }
 
-// Evento del botón
+    document.getElementById("total").textContent =
+    `Total de todos los productos: $${total}`;
+});
+
+// Evento del botón de promoción
 document.getElementById("btnPromocion").addEventListener("click", function () {
     document.getElementById("mensajePromo").textContent =
     "¡Promoción! Compra hoy y obtén un 15% de descuento en tu próxima compra.";
