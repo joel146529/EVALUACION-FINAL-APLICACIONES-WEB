@@ -16,7 +16,7 @@ function calcularDescuento(precio, porcentaje) {
 document.getElementById("btnCalcular").addEventListener("click", function () {
 
     // Calcular descuento
-    const productoDescuento = productos[1];
+    const productoDescuento = productos[3];
     const precioFinal = calcularDescuento(productoDescuento.precio, 20);
 
     document.getElementById("descuento").textContent =
