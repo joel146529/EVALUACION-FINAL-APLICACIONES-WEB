@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>EcoMarket</h1>
+        <p>Productos ecologicos </p>
+    </header>
+
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+
+            <div class="contenedor-productos">
+
+                <div class="producto">
+                    <h3>Bolsas de carton</h3>
+                    <p>Bolsa reutilizable de carton.</p>
+                    <p><strong>$3</strong></p>
+                </div>
+
+                <div class="producto">
+                    <h3>Hilo de botella plastica</h3>
+                    <p>hilo a bases de botellas plasticas.</p>
+                    <p><strong>$12</strong></p>
+                </div>
+
+                <div class="producto">
+                    <h3>Peine de madera</h3>
+                    <p>peine biodegradable.</p>
+                    <p><strong>$5</strong></p>
+                </div>
+
+                <div class="producto">
+                    <h3>Jabón Natural</h3>
+                    <p>Elaborado con ingredientes orgánicos.</p>
+                    <p><strong>$2</strong></p>
+                </div>
+
+                <div class="producto">
+                    <h3>Vasos </h3>
+                    <p>vasos inoxidable.</p>
+                    <p><strong>$18</strong></p>
+                </div>
+
+            </div>
+
+            <div class="resultados">
+                <p id="descuento"></p>
+                <p id="total"></p>
+
+                <button id="btnPromocion">
+                    Ver Promoción
+                </button>
+
+                <p id="mensajePromo"></p>
+            </div>
+
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+
+            <form id="formulario">
+
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+
+                <label>Correo</label>
+                <input type="email" id="correo">
+
+                <label>Mensaje</label>
+                <textarea id="mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+            <div id="mensajeValidacion"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 EcoMarket - Todos los derechos reservados.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
